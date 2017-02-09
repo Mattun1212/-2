@@ -17,8 +17,12 @@ class MemoViewController: UIViewController ,UITextFieldDelegate {
     var contentDoubleArray = [String]()
     var titleTripleArray = [String]()
     var contentTripleArray = [String]()
-    var titleRoutationArray = [String]()
-    var contentRoutationArray = [String]()
+    var partytitleSingleArray = [String]()
+    var partycontentSingleArray = [String]()
+    var partytitleDoubleArray = [String]()
+    var partycontentDoubleArray = [String]()
+    var partytitleTripleArray = [String]()
+    var partycontentTripleArray = [String]()
     var tappedCellIndex: Int = 0
     var saveIndex: Int!
     
@@ -42,6 +46,18 @@ class MemoViewController: UIViewController ,UITextFieldDelegate {
             contentTextView.text! = contentSingleArray[selectedIndex!]
 
         }
+            if saveData.arrayForKey("partytitleSingleArray") != nil {
+                titleSingleArray = saveData.arrayForKey("partytitleSingleArray") as! [String]
+                contentSingleArray = saveData.arrayForKey("partycontentSingleArray") as! [String]
+            }
+            
+            
+            if selectedIndex != nil{
+                titleTextField.text! = partytitleSingleArray[selectedIndex!]
+                contentTextView.text! = partycontentSingleArray[selectedIndex!]
+                
+            }
+
         
     }
         if saveIndex == 1 {
@@ -57,6 +73,19 @@ class MemoViewController: UIViewController ,UITextFieldDelegate {
                 
             }
             
+            if saveData.arrayForKey("partytitleDoubleArray") != nil {
+                titleDoubleArray = saveData.arrayForKey("partytitleDoubleArray") as! [String]
+                contentDoubleArray = saveData.arrayForKey("partycontentDoubleArray") as! [String]
+            }
+            
+            
+            if selectedIndex != nil{
+                titleTextField.text! = partytitleDoubleArray[selectedIndex!]
+                contentTextView.text! = partycontentDoubleArray[selectedIndex!]
+                
+            }
+
+            
         }
         if saveIndex == 2 {
             if saveData.arrayForKey("titleTripleArray") != nil {
@@ -71,22 +100,20 @@ class MemoViewController: UIViewController ,UITextFieldDelegate {
                 
             }
             
-        }
-        if saveIndex == 3 {
-            if saveData.arrayForKey("titleRoutationArray") != nil {
-                titleRoutationArray = saveData.arrayForKey("titleRoutationArray") as! [String]
-                contentRoutationArray = saveData.arrayForKey("contentRoutationArray") as! [String]
+            if saveData.arrayForKey("partytitleTripleArray") != nil {
+                titleTripleArray = saveData.arrayForKey("partytitleTripleArray") as! [String]
+                contentTripleArray = saveData.arrayForKey("partycontentTripleArray") as! [String]
             }
             
             
             if selectedIndex != nil{
-                titleTextField.text! = titleRoutationArray[selectedIndex!]
-                contentTextView.text! = contentRoutationArray[selectedIndex!]
+                titleTextField.text! = partytitleTripleArray[selectedIndex!]
+                contentTextView.text! = partycontentTripleArray[selectedIndex!]
                 
             }
-            
-        }
 
+        }
+        
         
   }
     override func didReceiveMemoryWarning() {
@@ -118,6 +145,25 @@ class MemoViewController: UIViewController ,UITextFieldDelegate {
                 saveData.setObject(contentSingleArray, forKey: "contentSingleArray")
     
             }
+                if selectedIndex != nil {
+                    partytitleSingleArray[selectedIndex!] = titleTextField.text!
+                    partycontentSingleArray[selectedIndex!] = contentTextView.text!
+                    
+                    if titleTextField.text != ""{
+                        saveData.setObject(partytitleSingleArray, forKey: "partytitleSingleArray")
+                        saveData.setObject(partycontentSingleArray, forKey: "partycontentSingleArray")
+                        
+                    }
+                    
+                }else if selectedIndex == nil {
+                    //    　　　titleTextFieldの値がnilである時、selectedindexにinsertする
+                    partytitleSingleArray.append(titleTextField.text!)
+                    partycontentSingleArray.append(contentTextView.text!)
+                    saveData.setObject(partytitleSingleArray, forKey: "partytitleSingleArray")
+                    saveData.setObject(partycontentSingleArray, forKey: "partycontentSingleArray")
+                    
+                }
+
             
             
            
@@ -142,7 +188,26 @@ class MemoViewController: UIViewController ,UITextFieldDelegate {
             saveData.setObject(contentDoubleArray, forKey: "contentDoubleArray")
 
         }
-        
+            
+            if selectedIndex != nil {
+                partytitleDoubleArray[selectedIndex!] = titleTextField.text!
+                partycontentDoubleArray[selectedIndex!] = contentTextView.text!
+                
+                if titleTextField.text != ""{
+                    saveData.setObject(partytitleDoubleArray, forKey: "partytitleDoubleArray")
+                    saveData.setObject(partycontentDoubleArray, forKey: "partycontentDoubleArray")
+                    
+                }
+                
+            }else if selectedIndex == nil {
+                //    　　　titleTextFieldの値がnilである時、selectedindexにinsertする
+                partytitleDoubleArray.append(titleTextField.text!)
+                partycontentDoubleArray.append(contentTextView.text!)
+                saveData.setObject(partytitleDoubleArray, forKey: "partytitleDoubleArray")
+                saveData.setObject(partycontentDoubleArray, forKey: "partycontentDoubleArray")
+                
+            }
+
         
             
     }
@@ -166,29 +231,30 @@ class MemoViewController: UIViewController ,UITextFieldDelegate {
                 saveData.setObject(contentTripleArray, forKey: "contentTripleArray")
 
             }
+        
+        if selectedIndex != nil {
+            partytitleTripleArray[selectedIndex!] = titleTextField.text!
+            partycontentTripleArray[selectedIndex!] = contentTextView.text!
+            
+            if titleTextField.text != ""{
+                saveData.setObject(partytitleTripleArray, forKey: "partytitleTripleArray")
+                saveData.setObject(partycontentTripleArray, forKey: "partycontentTripleArray")
+                
+            }
+            
+        }else if selectedIndex == nil {
+            //    　　　titleTextFieldの値がnilである時、selectedindexにinsertする
+            partytitleTripleArray.append(titleTextField.text!)
+            partycontentTripleArray.append(contentTextView.text!)
+            saveData.setObject(partytitleTripleArray, forKey: "partytitleTripleArray")
+            saveData.setObject(partycontentTripleArray, forKey: "partycontentTripleArray")
+            
+        }
+
 
         }
 
     
-    if saveIndex == 3 {
-         if selectedIndex != nil {
-            titleRoutationArray[selectedIndex!] = titleTextField.text!
-            contentRoutationArray[selectedIndex!] = contentTextView.text!
-            if titleTextField.text != ""{
-                saveData.setObject(titleRoutationArray, forKey: "titleRoutationArray")
-                saveData.setObject(contentRoutationArray, forKey: "contentRoutationArray")
-                
-            }
-
-            }else if selectedIndex == nil {
-            //    　　　titleTextFieldの値がnilである時、selectedindexにinsertする
-                titleRoutationArray.append(titleTextField.text!)
-                contentRoutationArray.append(contentTextView.text!)
-                saveData.setObject(titleRoutationArray, forKey: "titleRoutationArray")
-                saveData.setObject(contentRoutationArray, forKey: "contentRoutationArray")
-
-            }
-        }
     }
 
 

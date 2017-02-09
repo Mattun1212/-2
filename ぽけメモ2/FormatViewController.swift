@@ -19,7 +19,7 @@ class FormatViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.dataSource = self
         tableView.delegate = self
         // Do any additional setup after loading the view.
-        formatArray = ["シングル" , "ダブル", "トリプル"  ,"ローテーション"]
+        formatArray = ["シングル" , "ダブル", "WCS"]
     }
 
     override func didReceiveMemoryWarning() {

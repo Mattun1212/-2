@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0CE0681E4C8B6E003AB7FA /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0CE0671E4C8B6E003AB7FA /* Realm.framework */; };
+		BF0CE06A1E4C8B89003AB7FA /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0CE0691E4C8B89003AB7FA /* RealmSwift.framework */; };
+		BF0CE06B1E4C8E38003AB7FA /* RealmSwift.framework in Resources */ = {isa = PBXBuildFile; fileRef = BF0CE0691E4C8B89003AB7FA /* RealmSwift.framework */; };
+		BF0CE06C1E4C8E38003AB7FA /* Realm.framework in Resources */ = {isa = PBXBuildFile; fileRef = BF0CE0671E4C8B6E003AB7FA /* Realm.framework */; };
 		BF21920B1D1C03DE00AA7DF9 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21920A1D1C03DE00AA7DF9 /* ForecastViewController.swift */; };
 		BF2ED5481DAF861200F8FAEF /* MonsterballViewControllor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2ED5471DAF861200F8FAEF /* MonsterballViewControllor.swift */; };
 		BF2ED54A1DAF863E00F8FAEF /* monsterball.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2ED5491DAF863E00F8FAEF /* monsterball.png */; };
@@ -17,6 +21,8 @@
 		BF4C4FFC1D9D1B1600D298E4 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C4FFB1D9D1B1600D298E4 /* start.png */; };
 		BF4C4FFE1D9D1CF900D298E4 /* StartViewControllor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C4FFD1D9D1CF900D298E4 /* StartViewControllor.swift */; };
 		BF4C50011D9D246500D298E4 /* CGAffineTransformAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4C50001D9D246500D298E4 /* CGAffineTransformAdditions.swift */; };
+		BF6F2CEB1E27A1CD0052CCCF /* TableViewRootCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2CEA1E27A1CD0052CCCF /* TableViewRootCell.swift */; };
+		BF6F2CEE1E27A25F0052CCCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6F2CED1E27A25F0052CCCF /* ViewController.swift */; };
 		BF96229F1D93F1220010812A /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = BF96229E1D93F1220010812A /* dot.png */; };
 		BF9622A71D93FC240010812A /* battle.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9622A61D93FC240010812A /* battle.png */; };
 		BF9622A91D93FC2D0010812A /* setup.png in Resources */ = {isa = PBXBuildFile; fileRef = BF9622A81D93FC2D0010812A /* setup.png */; };
@@ -931,6 +937,7 @@
 		BFB4CEA51DD489A0003D0880 /* egg.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4CB1B1DD489A0003D0880 /* egg.png */; };
 		BFB4CEA61DD489A0003D0880 /* タマゴ.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB4CB1C1DD489A0003D0880 /* タマゴ.png */; };
 		BFB4CEA81DD492E0003D0880 /* iconload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB4CEA71DD492E0003D0880 /* iconload.swift */; };
+		BFB4CEAA1DF0355C003D0880 /* CustomHeaderFooterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB4CEA91DF0355C003D0880 /* CustomHeaderFooterViewController.swift */; };
 		BFDA724B1C10573F0096BE82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA724A1C10573F0096BE82 /* AppDelegate.swift */; };
 		BFDA724D1C10573F0096BE82 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDA724C1C10573F0096BE82 /* FirstViewController.swift */; };
 		BFDA72521C10573F0096BE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFDA72501C10573F0096BE82 /* Main.storyboard */; };
@@ -961,6 +968,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF0CE0671E4C8B6E003AB7FA /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../realm-swift-2.4.2/ios/swift-3.0.1/Realm.framework"; sourceTree = "<group>"; };
+		BF0CE0691E4C8B89003AB7FA /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../realm-swift-2.4.2/ios/swift-3.0.1/RealmSwift.framework"; sourceTree = "<group>"; };
 		BF21920A1D1C03DE00AA7DF9 /* ForecastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		BF2ED5471DAF861200F8FAEF /* MonsterballViewControllor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterballViewControllor.swift; sourceTree = "<group>"; };
 		BF2ED5491DAF863E00F8FAEF /* monsterball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monsterball.png; sourceTree = "<group>"; };
@@ -972,6 +981,8 @@
 		BF4C4FFD1D9D1CF900D298E4 /* StartViewControllor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewControllor.swift; sourceTree = "<group>"; };
 		BF4C4FFF1D9D1FE400D298E4 /* ヒラギノ角ゴ Std W8.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ヒラギノ角ゴ Std W8.otf"; sourceTree = "<group>"; };
 		BF4C50001D9D246500D298E4 /* CGAffineTransformAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGAffineTransformAdditions.swift; sourceTree = "<group>"; };
+		BF6F2CEA1E27A1CD0052CCCF /* TableViewRootCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewRootCell.swift; sourceTree = "<group>"; };
+		BF6F2CED1E27A25F0052CCCF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF96229E1D93F1220010812A /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
 		BF9622A61D93FC240010812A /* battle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battle.png; sourceTree = "<group>"; };
 		BF9622A81D93FC2D0010812A /* setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setup.png; sourceTree = "<group>"; };
@@ -1886,6 +1897,7 @@
 		BFB4CB1B1DD489A0003D0880 /* egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = egg.png; sourceTree = "<group>"; };
 		BFB4CB1C1DD489A0003D0880 /* タマゴ.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "タマゴ.png"; sourceTree = "<group>"; };
 		BFB4CEA71DD492E0003D0880 /* iconload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iconload.swift; sourceTree = "<group>"; };
+		BFB4CEA91DF0355C003D0880 /* CustomHeaderFooterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHeaderFooterViewController.swift; sourceTree = "<group>"; };
 		BFDA72471C10573F0096BE82 /* ぽけメモ2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ぽけメモ2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFDA724A1C10573F0096BE82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFDA724C1C10573F0096BE82 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -1909,6 +1921,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0CE06A1E4C8B89003AB7FA /* RealmSwift.framework in Frameworks */,
+				BF0CE0681E4C8B6E003AB7FA /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1929,6 +1943,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF6F2CEC1E27A1F30052CCCF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		BFB4C7921DD48999003D0880 /* iconxy */ = {
 			isa = PBXGroup;
 			children = (
@@ -2845,6 +2866,8 @@
 		BFDA723E1C10573F0096BE82 = {
 			isa = PBXGroup;
 			children = (
+				BF0CE0691E4C8B89003AB7FA /* RealmSwift.framework */,
+				BF0CE0671E4C8B6E003AB7FA /* Realm.framework */,
 				BFDA72491C10573F0096BE82 /* ぽけメモ2 */,
 				BFDA72601C10573F0096BE82 /* ぽけメモ2Tests */,
 				BFDA726B1C10573F0096BE82 /* ぽけメモ2UITests */,
@@ -2877,11 +2900,14 @@
 				BF9622A81D93FC2D0010812A /* setup.png */,
 				BF9622A61D93FC240010812A /* battle.png */,
 				BF96229E1D93F1220010812A /* dot.png */,
+				BF6F2CEC1E27A1F30052CCCF /* New Group */,
 				BFDA724A1C10573F0096BE82 /* AppDelegate.swift */,
 				BF4C50001D9D246500D298E4 /* CGAffineTransformAdditions.swift */,
 				BFDA724C1C10573F0096BE82 /* FirstViewController.swift */,
+				BFB4CEA91DF0355C003D0880 /* CustomHeaderFooterViewController.swift */,
 				BF33F1661C5A376D00D22BC4 /* MemoViewController.swift */,
 				BFB4C78E1DD48561003D0880 /* SecondViewController.swift */,
+				BF6F2CED1E27A25F0052CCCF /* ViewController.swift */,
 				BF21920A1D1C03DE00AA7DF9 /* ForecastViewController.swift */,
 				BFB4CEA71DD492E0003D0880 /* iconload.swift */,
 				BFDA727A1C10618A0096BE82 /* ThirdViewController.swift */,
@@ -2889,6 +2915,7 @@
 				BFDA727C1C1061C00096BE82 /* FourthViewController.swift */,
 				BFA4375A1D78448C00181553 /* FormatViewController.swift */,
 				BF4C4FFD1D9D1CF900D298E4 /* StartViewControllor.swift */,
+				BF6F2CEA1E27A1CD0052CCCF /* TableViewRootCell.swift */,
 				BF2ED5471DAF861200F8FAEF /* MonsterballViewControllor.swift */,
 				BFDA72501C10573F0096BE82 /* Main.storyboard */,
 				BFDA72531C10573F0096BE82 /* Assets.xcassets */,
@@ -2926,6 +2953,7 @@
 				BFDA72431C10573F0096BE82 /* Sources */,
 				BFDA72441C10573F0096BE82 /* Frameworks */,
 				BFDA72451C10573F0096BE82 /* Resources */,
+				BF0CE0631E4C882F003AB7FA /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -3019,6 +3047,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0CE06B1E4C8E38003AB7FA /* RealmSwift.framework in Resources */,
+				BF0CE06C1E4C8E38003AB7FA /* Realm.framework in Resources */,
 				BFB4CDEA1DD489A0003D0880 /* 589.png in Resources */,
 				BFB4CD941DD489A0003D0880 /* 513.png in Resources */,
 				BFB4CD681DD489A0003D0880 /* 487o.png in Resources */,
@@ -3957,6 +3987,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BF0CE0631E4C882F003AB7FA /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BFDA72431C10573F0096BE82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -3971,10 +4018,13 @@
 				BF4C4FFE1D9D1CF900D298E4 /* StartViewControllor.swift in Sources */,
 				BFDA727B1C10618A0096BE82 /* ThirdViewController.swift in Sources */,
 				BF33F1671C5A376D00D22BC4 /* MemoViewController.swift in Sources */,
+				BF6F2CEB1E27A1CD0052CCCF /* TableViewRootCell.swift in Sources */,
 				BF21920B1D1C03DE00AA7DF9 /* ForecastViewController.swift in Sources */,
 				BFDA727D1C1061C00096BE82 /* FourthViewController.swift in Sources */,
 				BF2ED5481DAF861200F8FAEF /* MonsterballViewControllor.swift in Sources */,
 				BFDA724D1C10573F0096BE82 /* FirstViewController.swift in Sources */,
+				BF6F2CEE1E27A25F0052CCCF /* ViewController.swift in Sources */,
+				BFB4CEAA1DF0355C003D0880 /* CustomHeaderFooterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

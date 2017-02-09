@@ -10,29 +10,41 @@ import UIKit
 
 class ForecastViewController: UIViewController {
     
-    @IBOutlet weak var firstTextField: UITextField!
-    @IBOutlet weak var secondTextField: UITextField!
-    @IBOutlet weak var thirdTextField: UITextField!
-    @IBOutlet weak var fourthTextField: UITextField!
-    @IBOutlet weak var fifthTextField: UITextField!
-    @IBOutlet weak var sixthTextField: UITextField!
+    @IBOutlet var firstbutton: UIButton!
+    @IBOutlet var secondbutton: UIButton!
+    @IBOutlet var thirdbutton: UIButton!
+    @IBOutlet var fourthbutton: UIButton!
+    @IBOutlet var fifthbutton: UIButton!
+    @IBOutlet var sixthbutton: UIButton!
     
-    var sendText:[String]!
+    var sendText:[String] = [String]()
     
     var iconload = IconLoad()
+    var loadText = [[String]]()
+    var buttonArray:[UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-       iconload.loadcsv()
-        var result: [[String]] = []
-        if let csvPath = NSBundle.mainBundle().pathForResource("pokemonData", ofType: "csv") {
-            let csvString = NSString(contentsOfFile: csvPath, encoding: NSUTF8StringEncoding, error: nil) as! String
-            csvString.enumerateLines { (line, stop) -> () in
-                result.append(line.componentsSeparatedByString(","))
+        
+        print(sendText)
+        buttonArray = [firstbutton,secondbutton,thirdbutton,fourthbutton,fifthbutton,sixthbutton]
+       loadText = iconload.loadcsv()
+        
+        for i in  0..<loadText.count {
+            
+            for j in 0..<sendText.count{
+                if sendText[j] == loadText[i][1]{
+                    buttonArray[j].setBackgroundImage(UIImage(named: loadText[i][2]), forState: .Normal)
+                }
             }
+            
         }
-        print(result)
+        
+        
+
+        
+
+        
     }
 
     
@@ -40,6 +52,9 @@ class ForecastViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+   
     
 
     /*
@@ -52,4 +67,11 @@ class ForecastViewController: UIViewController {
     }
     */
 
+    
+    
+    
 }
+
+
+
+

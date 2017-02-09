@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2009" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZI8-Mw-e5s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F2109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="ZI8-Mw-e5s">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
@@ -201,7 +201,7 @@
                                 <rect key="frame" x="145" y="350" width="30" height="30"/>
                                 <state key="normal" title="決定"/>
                                 <connections>
-                                    <segue destination="I8g-5E-0Yt" kind="push" id="jRG-fw-faO"/>
+                                    <segue destination="I8g-5E-0Yt" kind="push" identifier="SecondView" id="jRG-fw-faO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -233,34 +233,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcE-sC-l26">
-                                <rect key="frame" x="55" y="120" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wje-8W-Vn0">
+                                <rect key="frame" x="43" y="103" width="70" height="69"/>
+                                <color key="tintColor" red="1" green="0.1511083789969363" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6E2-k3-Yzo">
-                                <rect key="frame" x="55" y="202" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ND3-j2-EDI">
+                                <rect key="frame" x="193" y="103" width="70" height="68"/>
+                                <color key="tintColor" red="1" green="0.2297599542874138" blue="0.035491296699044161" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1x-U1-WNe">
-                                <rect key="frame" x="55" y="300" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MW-Tj-aC7">
+                                <rect key="frame" x="43" y="222" width="70" height="68"/>
+                                <color key="tintColor" red="1" green="0.21361978363520606" blue="0.010591124193265022" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr7-6j-qMx">
-                                <rect key="frame" x="225" y="300" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM7-mO-iqj">
+                                <rect key="frame" x="193" y="346" width="70" height="66"/>
+                                <color key="tintColor" red="1" green="0.1609982179740389" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2e-7h-F2h">
-                                <rect key="frame" x="225" y="202" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9f-yl-mXu">
+                                <rect key="frame" x="43" y="346" width="70" height="66"/>
+                                <color key="tintColor" red="1" green="0.27772986966940505" blue="0.025151177234692845" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZH-fd-p7t">
-                                <rect key="frame" x="225" y="120" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSe-7a-k02">
+                                <rect key="frame" x="193" y="222" width="70" height="65"/>
+                                <color key="tintColor" red="1" green="0.24947239273036503" blue="0.025748845897962225" alpha="1" colorSpace="calibratedRGB"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5sz-Zo-EMi"/>
+                    <connections>
+                        <outlet property="fifthbutton" destination="L9f-yl-mXu" id="Wfh-67-2DR"/>
+                        <outlet property="firstbutton" destination="wje-8W-Vn0" id="nPY-Wm-H6y"/>
+                        <outlet property="fourthbutton" destination="BSe-7a-k02" id="3yp-wm-08T"/>
+                        <outlet property="secondbutton" destination="ND3-j2-EDI" id="xUf-UL-JDE"/>
+                        <outlet property="sixthbutton" destination="iM7-mO-iqj" id="bFK-qo-cN8"/>
+                        <outlet property="thirdbutton" destination="6MW-Tj-aC7" id="Wsa-CS-Exe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iVF-BL-ZHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -23,7 +23,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     var fourthArray = [String]()
     var fifthArray = [String]()
     var sixthArray = [String]()
-    
+    var iconload = IconLoad()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         fourthTextField.delegate = self
         fifthTextField.delegate = self
         sixthTextField.delegate = self
+        iconload.loadcsv()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -46,12 +47,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         if  segue.identifier == "SecondView" {
             let SecondViewController = segue.destinationViewController as! ForecastViewController
             
-            SecondViewController.sendText[0] = self.firstTextField.text!
-            SecondViewController.sendText[1] = self.secondTextField.text!
-            SecondViewController.sendText[2] = self.thirdTextField.text!
-            SecondViewController.sendText[3] = self.fourthTextField.text!
-            SecondViewController.sendText[4] = self.fifthTextField.text!
-            SecondViewController.sendText[5] = self.sixthTextField.text!
+            SecondViewController.sendText
+                .append(self.firstTextField.text!)
+            SecondViewController.sendText.append(self.secondTextField.text!)
+            SecondViewController.sendText.append(self.thirdTextField.text!)
+            SecondViewController.sendText.append(self.fourthTextField.text!)
+            SecondViewController.sendText.append(self.fifthTextField.text!)
+            SecondViewController.sendText.append(self.sixthTextField.text!)
         }
     }
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
